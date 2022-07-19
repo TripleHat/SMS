@@ -5,7 +5,8 @@ try:
 except:
 	print("Installing Missing Dependency\n")
 	os.system("pip install beem-africa > /dev/null")
-	os.system("pip install requests")
+	os.system("pip install requests > /dev/null")
+	os.system("pip install configparser > /dev/null")
 
 cfg = ConfigParser()
 cfg.read("config/config.ini")
