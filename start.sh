@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [[ -e "$PATH/python" ]]
+if [[ -e "$PATH/python3" ]]
 then
 	echo -e "\033[9$(( RANDOM % 6 ))m"
 else
 	echo -e "\033[9$(( RANDOM % 6 ))m[!] Please Wait..."
-	pkg install python -y > /dev/null
+	apt install python -y > /dev/null
 fi
 
-python main.py
+python3 main.py
